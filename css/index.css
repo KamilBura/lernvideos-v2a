@@ -156,12 +156,12 @@ a:focus {
 
 @media (max-width: 1200px) {
     #sidebar {
-        left: -250px;
+        left: -200px;
     }
 }
 
 @media (max-width: 1400px) {
     #sidebar {
-        left: -200px;
+        left: -150px;
     }
 }
