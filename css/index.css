@@ -73,7 +73,7 @@ a:focus {
 
 /* SIDEBAR STYLE */
 
-.wrapper {
+.container {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
@@ -81,6 +81,7 @@ a:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -92,11 +93,8 @@ a:focus {
     position: fixed;
     left: 0;
     z-index: 2;
+    flex: 1;
 }
-
-#sidebar.active {
-    margin-left: -250px;
-} 
 
 .nav-active {
     background: #3784D1 !important;
@@ -125,6 +123,7 @@ a:focus {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     z-index: 1;
+    flex: 1;
 }
 
 
@@ -149,3 +148,20 @@ a:focus {
     transition: all 0.5s;
 }
 	
+@media (max-width: 768px) {
+    #sidebar {
+        left: -300px;
+    }
+  }
+
+@media (max-width: 1200px) {
+    #sidebar {
+        left: -250px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #sidebar {
+        left: -200px;
+    }
+}
