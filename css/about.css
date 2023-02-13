@@ -13,14 +13,23 @@ body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
-    animation-name: body-ann;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: body-ann;
+            animation-name: body-ann;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+@-webkit-keyframes body-ann {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
 }
 
 @keyframes body-ann {
@@ -46,28 +55,35 @@ body::-webkit-scrollbar {
     font-weight: 600;
     text-align: center;
     top: 18rem;
-    animation-name: SH-mid-content;
-    animation-duration: 2.3s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: SH-mid-content;
+            animation-name: SH-mid-content;
+    -webkit-animation-duration: 2.3s;
+            animation-duration: 2.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 .SH-color-gray {
     color: #1D263B;
+    -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
 }
 
 .SH-color-gray:hover {
     color: #5C6784 !important;
+    -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
 }
 
 .SH-name-color-whitegray {
     color: #5C6784;
+    -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
 
 .SH-name-color-whitegray:hover {
     color: #FA824C !important;
+    -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
 
@@ -75,12 +91,21 @@ body::-webkit-scrollbar {
     font-size: 14px;
     text-align: center;
     top: 18rem;
-    animation-name: SH-mid-content;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: SH-mid-content;
+            animation-name: SH-mid-content;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 /* KEYFRAME */
+
+@-webkit-keyframes SH-mid-content {
+    0% {right: 200rem; visibility: visible;}
+    100% {right: 0rem; visibility: visible;}
+    
+}
 
 @keyframes SH-mid-content {
     0% {right: 200rem; visibility: visible;}
