@@ -4,8 +4,8 @@
 
 # 🐶 | About
 
--The website was created to help people in the class solve mathematical tasks, whether it's a parabola, a line, or geometry
--The website was created from 0% to 100% by **@Kamil Bura**
+- The website was created to help people in the class solve mathematical tasks, whether it's a parabola, a line, or geometry
+- The website was created from 0% to 100% by **@Kamil Bura**
 
 ## 📃 | License
 
