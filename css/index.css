@@ -1,0 +1,129 @@
+/* FONTS */
+
+@font-face {
+    font-family: NG-B;
+    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
+}
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+/* ENDE FONTS*/
+
+/*------------*/
+
+/* BASE NEEDED */
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    animation-name: body-ann;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    scrollbar-width: none;
+    max-height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes body-ann {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+/* ENDE BASE */
+
+/*-------------*/
+
+/* LEFTSIDE CATEGORY PANEL / MID CONTENT IFRAME */
+
+.SH-mid-content {
+    height: 95vh;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* SIDEBAR STYLE */
+
+.wrapper {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    transition: all 0.3s;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    z-index: 2;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+} 
+
+.nav-active {
+    background: #3784D1 !important;
+    color: black !important;
+}
+
+.SH-group-item {
+    background-color: #342E37;
+    color: white;
+}
+
+.SH-hoverann:hover {
+    background-color: #3784D1;
+    color: black;
+}
+
+
+/* CONTENT STYLE */
+
+.main-content {
+    position: absolute;
+    width: 80%;
+    padding: 20px;
+    right: 0;
+    min-height: 100vh;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+
+/* ENDE LEFTSIDE PANEL / IFRAME MID CONTENT */
+
+@media (max-width: 576px) {
+    .SH-PhonesWarning {
+        font-size: large;
+        text-align: center;
+        display: block !important;
+        margin-top: 18rem ;
+    }
+    .SH-SidebarPhone {
+        display: none !important;
+    }
+}

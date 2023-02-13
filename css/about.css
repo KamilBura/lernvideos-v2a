@@ -1,0 +1,89 @@
+/* FONTS */
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+/* ENDE FONTS*/
+
+/*------------*/
+
+/* BASE NEEDED */
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    animation-name: body-ann;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes body-ann {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+/* ENDE BASE */
+
+/*-------------*/
+
+/* MID CONTENT */
+
+.SH-mid-content {
+    height: 95vh;
+    z-index: 2;
+    background-color: transparent !important;
+}
+
+.SH-site-name {
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+    top: 18rem;
+    animation-name: SH-mid-content;
+    animation-duration: 2.3s;
+    animation-fill-mode: forwards;
+}
+
+.SH-color-gray {
+    color: #1D263B;
+    transition: 1s ease-in-out;
+}
+
+.SH-color-gray:hover {
+    color: #5C6784 !important;
+    transition: 1s ease-in-out;
+}
+
+.SH-name-color-whitegray {
+    color: #5C6784;
+    transition: 0.5s ease-in-out;
+}
+
+.SH-name-color-whitegray:hover {
+    color: #FA824C !important;
+    transition: 0.5s ease-in-out;
+}
+
+.SH-undersite-text {
+    font-size: 14px;
+    text-align: center;
+    top: 18rem;
+    animation-name: SH-mid-content;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+/* KEYFRAME */
+
+@keyframes SH-mid-content {
+    0% {right: 200rem; visibility: visible;}
+    100% {right: 0rem; visibility: visible;}
+    
+}
