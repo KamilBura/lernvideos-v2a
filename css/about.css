@@ -112,3 +112,13 @@ body::-webkit-scrollbar {
     100% {right: 0rem; visibility: visible;}
     
 }
+
+@media (max-width: 576px) {
+    .SH-site-name {
+        top: 5rem;
+        font-size: 44px;
+    }
+    .SH-undersite-text {
+        top: 5rem;
+    }
+}

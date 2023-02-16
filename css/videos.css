@@ -27,7 +27,6 @@ body {
             animation-fill-mode: forwards;
     scrollbar-width: none;
     max-height: 100%;
-    font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
 }
@@ -48,34 +47,13 @@ body::-webkit-scrollbar {
     
 }
 
-/* ENDE BASE */
-
-a,
-a:hover,
-a:focus,
-ul,
-ul:hover,
-ul:focus,
-li,
-li:hover,
-li:focus {
-    color: inherit;
-    text-decoration: none;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-}
-
-.main-content {
+.VideoPlayer {
+    box-shadow: 1px 1px 20px;
+    border-radius: 10px;
+    height: 100vh;
+    width: 90%;
+    display: block;
     position: relative;
-    width: 100%;
-    height: 90vh;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.nav-active {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    background-color: #2c3135;
-    color: #338feb !important;
+    margin: 0 auto;
+    z-index: 100;
 }
